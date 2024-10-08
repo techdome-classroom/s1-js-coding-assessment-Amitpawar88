@@ -5,7 +5,6 @@ const decodeTheRing = function (s, p) {
     const m = p.length;
 
     const dp = Array(n + 1).fill(false).map(() => Array(m + 1).fill(false));
-
     dp[0][0] = true;
 
     for (let j = 1; j <= m; j++) { 
