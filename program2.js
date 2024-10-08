@@ -19,11 +19,14 @@ const decodeTheRing = function (s, p) {
         } else if (p[j - 1] === '*') {
           dp[i][j] = dp[][j - 2];
           
-          if (p[j - 2] == s[i - 1] || p[j - 2] === '')
+          if (p[j - 2] == s[i - 1] || p[j - 2] === '.') {
+            dp[i][j] = dp[i][j] || dp[i - 1][j];
+          }
         }
       }
     }
 
+    return dp[n][m];
   };
   
   module.exports = decodeTheRing;
