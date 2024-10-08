@@ -3,8 +3,8 @@ const getTotalIsles = function (grid) {
 
   // write your code here
   let res = 0;
-  let n = grid.length;
-  let m = grid[0].length;
+  const n = grid.length;
+  const m = grid[0].length;
 
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
@@ -15,7 +15,7 @@ const getTotalIsles = function (grid) {
     }
   }
 
-  function dfs(i, j) {
+  function dfs(i, j, n, m) {
     if (grid[i][j] === '1') grid[i][j] = '0';
     else return;
 
