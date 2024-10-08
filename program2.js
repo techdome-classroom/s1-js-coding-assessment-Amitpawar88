@@ -12,7 +12,7 @@ const decodeTheRing = function (s, p) {
       }
     }
 
-    for 
+    for (let i = 1; i <= n)
 
   };
   
