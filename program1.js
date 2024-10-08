@@ -10,7 +10,8 @@ const getTotalIsles = function (grid) {
     if (grid[i][j] === '1') grid[i][j] = '0';
     else return;
 
-    if (i < grid.length)
+    if (i < n - 1) dfs(i + 1, j);
+    if (j < )
   }
 
 };
