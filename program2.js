@@ -14,12 +14,12 @@ const decodeTheRing = function (s, p) {
 
     for (let i = 1; i <= n; i++) {
       for (let j = 1; j <= m; j++) {
-        if (s[i - 1] === p[j - 1] || p[j - 1] === '.') {
+        if (s[i - 1] === p[j - 1] || p[j - 1] === '?') {
           dp[i][j] = dp[i - 1][j - 1];
         } else if (p[j - 1] === '*') {
           dp[i][j] = dp[i][j - 2];
           
-          if (p[j - 2] == s[i - 1] || p[j - 2] === '.') {
+          if (p[j - 2] == s[i - 1] || p[j - 2] === '?') {
             dp[i][j] = dp[i][j] || dp[i - 1][j];
           }
         }
