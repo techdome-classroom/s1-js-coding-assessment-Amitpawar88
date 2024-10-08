@@ -6,6 +6,7 @@ const getTotalIsles = function (grid) {
 
   function dfs(i, j) {
     if (grid[i][j] == '1') grid[i][j] = '0';
+    else return;
   }
 
 };
