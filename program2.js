@@ -19,7 +19,7 @@ const decodeTheRing = function (s, p) {
         } else if (p[j - 1] === '*') {
           dp[i][j] = dp[][j - 2];
           
-          if (p[j - 2] == s[i - 1])
+          if (p[j - 2] == s[i - 1] || p[j - 2] === '')
         }
       }
     }
