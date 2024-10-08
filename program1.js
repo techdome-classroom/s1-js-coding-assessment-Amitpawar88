@@ -3,8 +3,8 @@ const getTotalIsles = function (grid) {
 
   // write your code here
   let res = 0;
-  const n = grid.length;
-  const m = grid[0].length;
+  let n = grid.length;
+  let m = grid[0].length;
 
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
