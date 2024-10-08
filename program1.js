@@ -25,6 +25,7 @@ const getTotalIsles = function (grid) {
     if (j > 0 && j < m) dfs(i, j - 1, n, m);
   }
 
+  return count;
 };
 
 module.exports = getTotalIsles;
