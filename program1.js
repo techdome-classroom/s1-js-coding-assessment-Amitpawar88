@@ -6,8 +6,8 @@ const getTotalIsles = function (grid) {
   const n = grid.length;
   const m = grid[0].length;
 
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < m; j++) {
       if (grid[i][j] === '1') {
         res++;
         dfs(i, j, n, m);
