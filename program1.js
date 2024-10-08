@@ -16,7 +16,7 @@ const getTotalIsles = function (grid) {
   }
 
   function dfs(i, j, n, m) {
-    if (grid[i][j] === 'L') grid[i][j] = '';
+    if (grid[i][j] === 'L') grid[i][j] = 'W';
     else return;
 
     if (i < n - 1) dfs(i + 1, j, n, m);
