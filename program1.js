@@ -22,7 +22,7 @@ const getTotalIsles = function (grid) {
     if (i < n - 1) dfs(i + 1, j, n, m);
     if (j < m - 1) dfs(i, j + 1, n, m);
     if (i > 0 && i < n) dfs(i - 1, j, n, m);
-    if (j > 0 && j < m) dfs(i, j - 1);
+    if (j > 0 && j < m) dfs(i, j - 1, n, m);
   }
 
 };
