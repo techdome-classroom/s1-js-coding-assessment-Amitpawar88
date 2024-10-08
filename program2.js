@@ -31,8 +31,7 @@ const decodeTheRing = function (s, p) {
       }
     }
   }
-
-  // The answer is whether the entire string matches the entire pattern
+  
   return dp[n][m];
 };
   
