@@ -4,8 +4,8 @@ const getTotalIsles = function (grid) {
   // write your code here
   let res = 0;
 
-  function dfs(x, y) {
-    if (grid[])
+  function dfs(i, j) {
+    if (grid[i][j] == '1') grid[i][j] = '0';
   }
 
 };
